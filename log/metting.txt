@@ -1,0 +1,104 @@
+2024/06/02 13:50:47 [INFO]  Start API Port port :8080 env alpha
+2024/06/02 14:37:47 [INFO]  Start API Port port :8080 env alpha
+2024/06/02 14:38:35 [INFO]  Start API Port port :8080 env alpha
+2024/06/02 14:39:36 [INFO]  Start API Port port :8080 env alpha
+2024/06/02 14:40:18 [INFO]  Start API Port port :8080 env alpha
+2024/06/02 14:41:40 [INFO]  Start API Port port :8080 env alpha
+2024/06/02 14:42:13 [INFO]  Start API Port port :8080 env alpha
+2024/06/02 14:48:24 [INFO]  Start API Port port :8080 env alpha
+2024/06/02 14:48:51 [INFO]  Start API Port port :8080 env alpha
+2024/06/02 14:49:21 [INFO]  Start API Port port :8080 env alpha
+2024/06/02 18:19:40 [INFO]  Start API Port port :8080 env alpha
+2024/06/02 18:20:02 [INFO]  Start API Port port :8080 env alpha
+2024/06/02 18:20:53 [INFO]  Start API Port port :8080 env alpha
+2024/06/02 18:21:06 [INFO]  Start API Port port :8080 env alpha
+2024/06/02 18:24:03 [INFO]  Start API Port port :8080 env alpha
+2024/06/02 21:07:41 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:17:39 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:18:48 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:19:36 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:25:32 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:25:37 [ERR]  Failed To Create S3 Bucket err MissingRegion: could not find region configuration
+2024/06/06 15:26:23 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:26:25 [ERR]  Failed To Create S3 Bucket err MissingRegion: could not find region configuration
+2024/06/06 15:27:28 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:27:31 [ERR]  Failed To Create S3 Bucket err RequestError: send request failed
+caused by: Put "https://test.s3.amazonaws.com/werer": net/http: invalid header field name "x-amz-meta-key test"
+2024/06/06 15:27:59 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:28:01 [ERR]  Failed To Create S3 Bucket err RequestError: send request failed
+caused by: Put "https://test.s3.amazonaws.com/werer": net/http: invalid header field name "x-amz-meta-key test"
+2024/06/06 15:29:36 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:29:39 [ERR]  Failed To Create S3 Bucket err AuthorizationHeaderMalformed: The authorization header is malformed; the region 'us-east-1' is wrong; expecting 'us-east-2'
+	status code: 400, request id: JP78TD2W720KZF7S, host id: OewXkJ+rlZX92R84ciDkCzhnnw3yorYY9KdKKzr3WIHoITZb4+h8LV1EeNgJFv9b5MFmGT0yiNQ=
+2024/06/06 15:30:18 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:30:23 [ERR]  Failed To Create S3 Bucket err AccessDenied: User: arn:aws:iam::092052221248:user/metting-s3 is not authorized to perform: kms:GenerateDataKey on this resource because the resource does not exist in this Region, no resource-based policies allow access, or a resource-based policy explicitly denies access
+	status code: 403, request id: J8034F4KYXCR3HCV, host id: LIqEwLWolw1nSsILsj2br7FrdhZLNOJyLAs1ZUshMTABxpMUnB32uOHqQDH6K3MVZnecokSuMfs=
+2024/06/06 15:37:47 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:37:50 [ERR]  Failed To Create S3 Bucket err AccessDenied: User: arn:aws:iam::092052221248:user/metting-s3 is not authorized to perform: kms:GenerateDataKey on this resource because the resource does not exist in this Region, no resource-based policies allow access, or a resource-based policy explicitly denies access
+	status code: 403, request id: FC5TYJ371R1660R9, host id: P4uQFVD3YUegv6OmXM5dhtdNCd/+DbVV0LV1x1e0MOvWC03OcNEcpOY89+2XYEaWHr/9yDP+hj9QKUXWZ59ZfA==
+2024/06/06 15:38:09 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:38:11 [ERR]  Failed To Create S3 Bucket err AuthorizationHeaderMalformed: The authorization header is malformed; the region 'us-east-1' is wrong; expecting 'us-east-2'
+	status code: 400, request id: NW24WY06CHJ29NAV, host id: w05cq+0oRTf7RnS9Abq7IhEc7e9Xy8UC6AsXMQSSBEHlx1uCFKqdpV8r6I04A0s2oD5+UPCDY9w=
+2024/06/06 15:38:23 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:38:26 [ERR]  Failed To Create S3 Bucket err AuthorizationHeaderMalformed: The authorization header is malformed; the region 'us-east-1' is wrong; expecting 'us-east-2'
+	status code: 400, request id: 4XQ16KNZ418YJA4K, host id: l/zWZhqWxqopEwPA6/CjedsChtsfqBW/auXx30svuySsyi5oopR25+I4Oapuwf52ITd+FZVHloU=
+2024/06/06 15:38:35 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:38:38 [ERR]  Failed To Create S3 Bucket err InvalidAccessKeyId: The AWS Access Key Id you provided does not exist in our records.
+	status code: 403, request id: 733CZW6AJAYEA97V, host id: USIq54HnQ0vlvbRi9KyRpTignNOWiQqh8ncA5GH8Q2RajhNNLUGv0yVbObZBAANMzLjfz5gXcHagbG0DZX3F6w==
+2024/06/06 15:48:28 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:48:31 [ERR]  Failed To Create S3 Bucket err InvalidAccessKeyId: The AWS Access Key Id you provided does not exist in our records.
+	status code: 403, request id: KEGDCSNP8ZY7VPZP, host id: x0gm8u8id0wAO1FweIxhUrrsBrwOTy6CXn+fr+DICw3/9aHN3aEDztaPn0TlHlhZ+X7BCIkwL10=
+2024/06/06 15:49:20 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:49:22 [ERR]  Failed To Create S3 Bucket err AccessDenied: User: arn:aws:iam::092052221248:user/metting-s3 is not authorized to perform: kms:GenerateDataKey on this resource because the resource does not exist in this Region, no resource-based policies allow access, or a resource-based policy explicitly denies access
+	status code: 403, request id: 9XGYFNBKDXTC9Q1Q, host id: eeljCaQrbKfL/efM3FKM+7uyC0Lx83jSWyqsG2EEdMcKRjb/lT34JWTCqZfB93IA8hpPtkXK7vDYgShxkl0vRw==
+2024/06/06 15:49:39 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:49:42 [ERR]  Failed To Create S3 Bucket err AuthorizationHeaderMalformed: The authorization header is malformed; the region 'us-east-1' is wrong; expecting 'us-east-2'
+	status code: 400, request id: QGVWCKB31NDBVQQ8, host id: 6Xoko/7a5fqIiVYmohkJTZXDaO1HPfCs8cMoH8PsOCoBg7PL6V/+hf08ux+4bt6GrPVwAwHEz80=
+2024/06/06 15:56:18 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:56:19 [ERR]  Failed To Create S3 Bucket err RequestError: send request failed
+caused by: Put "https://test.s3.us-east-2.amazonaws.com/werer": net/http: invalid header field name "x-amz-meta-key test"
+2024/06/06 15:56:32 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:56:34 [ERR]  Failed To Create S3 Bucket err AccessDenied: User: arn:aws:iam::092052221248:user/metting-s3 is not authorized to perform: kms:GenerateDataKey on this resource because the resource does not exist in this Region, no resource-based policies allow access, or a resource-based policy explicitly denies access
+	status code: 403, request id: FVF1Q9MPQG0X69J0, host id: xWaL5mQijVtsQn09cENqWmLxnmA4cM00rbGmcBqFBX2xq/z7oknXi8/BT3hXPIxFCTPM/c1aqE5O1g9+nnU+yQ==
+2024/06/06 15:58:56 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:59:00 [ERR]  Failed To Create S3 Bucket err InvalidAccessKeyId: The AWS Access Key Id you provided does not exist in our records.
+	status code: 403, request id: 640D29HY8ZME117W, host id: v+7af+/MfFLyTckvwt6xCS5FONbuLc4V8+lgwGVlq1g8OxBQVJbIlHYFyqxqBSazmFkfKf5MmZBhafxuJXMFQw==
+2024/06/06 15:59:55 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 15:59:57 [ERR]  Failed To Create S3 Bucket err MissingRegion: could not find region configuration
+2024/06/06 16:00:29 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:00:31 [ERR]  Failed To Create S3 Bucket err InvalidAccessKeyId: The AWS Access Key Id you provided does not exist in our records.
+	status code: 403, request id: 7TZ0Z4AD5VM4XFDS, host id: j5NQ2n0p0KMu8dzU0vWJm6QsaF4ckoxVQ4ZAkGB4FgcEDgD/tmjfEHFmbJAbGJFVJo3oEalb8QHga4fDVlwSLA==
+2024/06/06 16:03:34 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:03:38 [ERR]  Failed To Create S3 Bucket err BucketRegionError: incorrect region, the bucket is not in 'us-east-2' region at endpoint '', bucket is in 'us-east-1' region
+	status code: 301, request id: CRQG8G7EPPHC2TFC, host id: Y/8sV2iTkYlKlzChfcEhffb13y9HioHuzU2qzQAcpnvaHHkFytrqU+vWlCbfJ9G7EfZljjeEXpIzJR4S5pPRjrf3gMUsbnBChlajr02nXi0=
+2024/06/06 16:03:47 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:03:50 [ERR]  Failed To Create S3 Bucket err InvalidAccessKeyId: The AWS Access Key Id you provided does not exist in our records.
+	status code: 403, request id: HR927F0801XB5A5T, host id: nJfqPTGAWX3N1R8WEPlkpu7fvfgYIX+0b9XROZeELhhGeiyOGXjRJgYUZh+LPWUC+gAFeVPdss8=
+2024/06/06 16:04:36 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:04:39 [ERR]  Failed To Create S3 Bucket err InvalidAccessKeyId: The AWS Access Key Id you provided does not exist in our records.
+	status code: 403, request id: 2B7C42RSSEK96GQ5, host id: 4BzoONoTHeWJu63ITRUpKnxKaD0sf09hBHeCyasEqnPRXlA4ocjiuRS98LoryPoe1F0hIsfy8Mk=
+2024/06/06 16:05:30 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:08:07 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:29:07 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:29:56 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:30:36 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:31:23 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:33:41 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:38:42 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:39:04 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:41:50 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:44:17 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:44:43 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:45:20 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:46:22 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:48:19 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:51:03 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:52:00 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:52:37 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:54:55 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:56:52 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:57:37 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 16:58:15 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 17:07:07 [INFO]  Start API Port port :8080 env alpha
+2024/06/06 17:07:15 [ERR]  Failed To Create S3 Bucket err AccessControlListNotSupported: The bucket does not allow ACLs
+	status code: 400, request id: 2R9RZ09JSA1MGR4W, host id: WYribn+/ogIeH7BJB6NdNWYvn1O1DDo5Rc50A49+DUzuOlQLz05zjYAlHL50GfrhySu9G4axBAw=

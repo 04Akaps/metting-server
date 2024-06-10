@@ -1,0 +1,21 @@
+[db]
+database = "mysql"
+url = "root:root@tcp(localhost:3306)/metting?multiStatements=true&parseTime=true"
+
+[info]
+port = ":8080"
+service = "alpha"
+log = "./log/metting.txt"
+
+[aws]
+IAMAKey = ""
+IAMSKey = ""
+Region = "us-east-1"
+Bucket = "metting-s3"
+S3BaseURL = ""
+
+[redis]
+Url = ""
+DB = 0
+User = "default"
+Password = ""
