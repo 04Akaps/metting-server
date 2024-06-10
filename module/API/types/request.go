@@ -13,3 +13,22 @@ type FindAroundFriendsReq struct {
 	Range int64  `form:"range" binding:"required"`
 	Limit int64  `form:"limit"`
 }
+
+type LikeRequest struct {
+	FromUser string `json:"fromUser" binding:"required"`
+	ToUser   string `json:"toUser" binding:"required"`
+}
+
+type RefuseRequest struct {
+	FromUser string `json:"fromUser" binding:"required"`
+	ToUser   string `json:"toUser" binding:"required"`
+}
+
+type AcceptedRequest struct {
+	FromUser string `json:"fromUser" binding:"required"`
+	ToUser   string `json:"toUser" binding:"required"`
+}
+
+type GetLikedListRequest struct {
+	User string `form:"user" binding:"required"`
+}

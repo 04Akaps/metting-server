@@ -33,6 +33,7 @@ func NewNetwork(
 	n.setGin()
 
 	userRouter(n)
+	likeRouter(n)
 
 	return n
 }
