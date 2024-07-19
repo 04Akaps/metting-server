@@ -1,0 +1,15 @@
+{
+  "name": "image-resize-lecture",
+  "version": "1.0.0",
+  "description": "1. npm install --arch=x64 --platform=linux --target=16x sharp",
+  "main": "index.js",
+  "scripts": {
+    "package": "zip -r function.zip ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sharp": "^0.32.6"
+  }
+}

@@ -10,12 +10,11 @@
 
 일부 수치 및 미처리 파일을 관리하기 위한 cron 모듈
 
-
 <h1> S3 </h1>
 
 유저의 이미지 파일을 관리하기 위해 사용
 
-<h3> 정책 관리 </h3>
+<h3> 정책 관리 예시</h3>
 
 ```
 {
@@ -39,13 +38,13 @@
             "Resource": "적당한 버킷 경로"
         }
     ]
-}    
+}
 ```
 
 상황에 따라서 해당 정책은 수정이 가능하다.
 이미지 캐시를 위하여 프로젝트에서는 CloudFront를 적용 하였다.
 
-<h3> CloudFront 정책 </h3>
+<h3> CloudFront 정책 예시</h3>
 
 ```
 {
@@ -70,6 +69,38 @@
   }
 ```
 
+<h3> Lambda 정책 예시</h3>
+Lambda는 실제로는 CloudFront의 Cache Hit을 예시로 작성이 되었다.
+
+해당 정책은 간단한 S3와의 정책을 설정하는 부분이다.
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "logs:PutLogEvents",
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream"
+      ],
+      "Resource": "arn:aws:logs:*:*:*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["s3:GetObject"],
+      "Resource": "arn:aws:s3:::BUCKET_NAME/*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["s3:PutObject"],
+      "Resource": "arn:aws:s3:::DEST_BUCKET/*"
+    }
+  ]
+}
+
+```
 
 <h1> MySQL Schema </h1>
 
@@ -89,7 +120,7 @@ CREATE table IF NOT EXISTS `user_location` (
     `latitude`  DOUBLE NULL COMMENT '위도',
     `hardness` DOUBLE NOT NULL COMMENT '경도',
     `location` POINT NOT NULL COMMENT '위치',
-    
+
     SPATIAL INDEX `spatial_index` (`location`)
 );
 
@@ -99,6 +130,6 @@ CREATE TABLE IF NOT EXISTS `user_like` (
     `to_user` VARCHAR(100) NOT NULL,
     `status` ENUM("send", "checked", "fail") NOT NULL,
     `created_time` BIGINT NOT NULL,
-    `updated_time` BIGINT DEFAULT 0 
+    `updated_time` BIGINT DEFAULT 0
 );
 ```
